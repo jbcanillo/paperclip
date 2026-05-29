@@ -32,7 +32,7 @@ services:
       USER_UID: "1000"
       USER_GID: "1000"
     volumes:
-      - /home/jbcanillo/paperclip:/paperclip
+      - ./home/jbcanillo/paperclip:/paperclip
     depends_on:
       db:
         condition: service_healthy
