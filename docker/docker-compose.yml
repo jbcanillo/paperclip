@@ -1,4 +1,4 @@
-wservices:
+services:
   db:
     image: postgres:17-alpine
     environment:
