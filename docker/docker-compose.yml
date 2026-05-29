@@ -33,11 +33,10 @@ services:
       USER_UID: "1000"
       USER_GID: "1000"
     volumes:
-      - paperclip-data:/paperclip
+      - /home/jbcanillo/paperclip:/paperclip
     depends_on:
       db:
         condition: service_healthy
 
 volumes:
   pgdata:
-  paperclip-data:
