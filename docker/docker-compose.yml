@@ -20,7 +20,7 @@ services:
       context: ..
       dockerfile: Dockerfile
     ports:
-      - "3100:3100"
+      - "9003:3100"
     environment:
       DATABASE_URL: postgres://paperclip:paperclip@db:5432/paperclip
       PORT: "3100"
